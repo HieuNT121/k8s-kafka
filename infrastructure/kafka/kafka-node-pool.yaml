@@ -1,0 +1,28 @@
+apiVersion: kafka.strimzi.io/v1
+kind: KafkaNodePool
+
+metadata:
+  name: kafka-pool
+  namespace: kafka
+
+  labels:
+    strimzi.io/cluster: kafka-cluster
+
+spec:
+  replicas: 3
+
+  roles:
+    - controller
+    - broker
+
+  storage:
+    type: ephemeral
+
+  resources:
+    requests:
+      cpu: "500m"
+      memory: 768Mi
+
+    limits:
+      cpu: "1"
+      memory: 1Gi

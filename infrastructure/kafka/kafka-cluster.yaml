@@ -1,0 +1,26 @@
+apiVersion: kafka.strimzi.io/v1
+kind: Kafka
+
+metadata:
+  name: kafka-cluster
+  namespace: kafka
+
+  annotations:
+    strimzi.io/node-pools: enabled
+    strimzi.io/kraft: enabled
+
+spec:
+  kafka:
+    version: 4.0.0
+
+    metadataVersion: "4.0-IV0"
+
+    listeners:
+      - name: plain
+        port: 9092
+        type: internal
+        tls: false
+
+  entityOperator:
+    topicOperator: {}
+    userOperator: {}
