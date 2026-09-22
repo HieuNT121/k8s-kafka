@@ -16,7 +16,9 @@ spec:
     - broker
 
   storage:
-    type: ephemeral
+    type: persistent-claim
+    size: 10Gi
+    class: standard
 
   resources:
     requests:
