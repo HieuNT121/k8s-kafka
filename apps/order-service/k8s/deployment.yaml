@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: order-api
+  namespace: order-system
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: order-api
+
+  template:
+    metadata:
+      labels:
+        app: order-api
+
+    spec:
+      containers:
+        - name: order-api
+
+          image: order-api:1.0
+
+          imagePullPolicy: IfNotPresent
+
+          ports:
+            - containerPort: 8080
+
+          envFrom:
+            - configMapRef:
+                name: order-api-config

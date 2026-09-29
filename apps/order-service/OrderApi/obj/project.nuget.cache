@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "zZbRkOGaMxc=",
+  "success": true,
+  "projectFilePath": "/Users/trunghieunguyen/Documents/Kubernetes/k8s-kafka/apps/order-service/OrderApi/OrderApi.csproj",
+  "expectedPackageFiles": [
+    "/Users/trunghieunguyen/.nuget/packages/confluent.kafka/2.15.1/confluent.kafka.2.15.1.nupkg.sha512",
+    "/Users/trunghieunguyen/.nuget/packages/librdkafka.redist/2.15.1/librdkafka.redist.2.15.1.nupkg.sha512",
+    "/Users/trunghieunguyen/.nuget/packages/microsoft.aspnetcore.openapi/10.0.11/microsoft.aspnetcore.openapi.10.0.11.nupkg.sha512",
+    "/Users/trunghieunguyen/.nuget/packages/microsoft.openapi/2.7.5/microsoft.openapi.2.7.5.nupkg.sha512"
+  ],
+  "logs": []
+}
